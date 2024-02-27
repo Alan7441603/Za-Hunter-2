@@ -21,6 +21,7 @@
 		EAA5553E2B8D691F006D3181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA555412B8D691F006D3181 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAA555482B8D69C0006D3181 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EAA5554A2B8D7706006D3181 /* Za-Hunter-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Za-Hunter-2-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		EAA555392B8D691E006D3181 /* Za Hunter 2 */ = {
 			isa = PBXGroup;
 			children = (
+				EAA5554A2B8D7706006D3181 /* Za-Hunter-2-Info.plist */,
 				EAA5553A2B8D691E006D3181 /* Za_Hunter_2App.swift */,
 				EAA5553C2B8D691E006D3181 /* ContentView.swift */,
 				EAA555482B8D69C0006D3181 /* LocationManager.swift */,
@@ -274,6 +276,8 @@
 				DEVELOPMENT_TEAM = 89C5L6Z6A5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Za-Hunter-2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires the use of Location Services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +307,8 @@
 				DEVELOPMENT_TEAM = 89C5L6Z6A5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Za-Hunter-2-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires the use of Location Services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
