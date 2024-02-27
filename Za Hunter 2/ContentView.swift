@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 struct ContentView: View {
     @StateObject var locationManager = LocationManager()
+    @State private var places = [Place]()
     @State private var userTrackingMode: MapUserTrackingMode = .follow
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -29,10 +30,24 @@ struct ContentView: View {
             )
         }
     }
+    func performSearch(item: String) {
+        let searchRequest = MKLocalSearch.Request()
+            searchRequest.naturalLanguageQuery = item
+            searchRequest.region = region
+            let search = MKLocalSearch(request: searchRequest)
+        search.start { <#MKLocalSearch.Response?#>, <#Error?#> in
+            <#code#>
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+struct Place: Identifiable {
+    let id = UUID()
+    let annotation: MKPointAnnotation
+    let mapItem: MKMapItem
 }
